@@ -87,11 +87,11 @@ const Home = () => {
                     </thead>
                     <tbody>
                         {allTasks.map(t => {
-                            return <>
-                                <tr key={t.id}>
+                            return (
+                                <tr key={t.id }>
                                     <td>{t.task}</td>
                                     <td>{getButton(t)}</td>
-                                </tr></>
+                                </tr>)
                         })}
 
                     </tbody>
